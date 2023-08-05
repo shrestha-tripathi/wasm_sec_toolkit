@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wasm_sec_toolkit/static/css/main.1e2e215a.css",
+    "main.js": "/wasm_sec_toolkit/static/js/main.1da912db.js",
+    "static/js/787.58fef95e.chunk.js": "/wasm_sec_toolkit/static/js/787.58fef95e.chunk.js",
+    "static/media/stegnography_bg.wasm": "/wasm_sec_toolkit/static/media/stegnography_bg.054bd5004f98a5b22967.wasm",
+    "static/media/wasm.png": "/wasm_sec_toolkit/static/media/wasm.7abc5464f80acd9b8869.png",
+    "static/media/ricknmorty.jpeg": "/wasm_sec_toolkit/static/media/ricknmorty.f0418a9c2e580928938e.jpeg",
+    "static/media/Camera.png": "/wasm_sec_toolkit/static/media/Camera.4a28b5e0d06f773d8e1c.png",
+    "static/media/Photos.png": "/wasm_sec_toolkit/static/media/Photos.2487d770805167e57858.png",
+    "static/media/Uber.png": "/wasm_sec_toolkit/static/media/Uber.d412c1a17c29e42add40.png",
+    "static/media/Calendar.png": "/wasm_sec_toolkit/static/media/Calendar.0026681e629e75d3ff2e.png",
+    "static/media/color.png": "/wasm_sec_toolkit/static/media/color.6441e63a57ccc5105bad.png",
+    "index.html": "/wasm_sec_toolkit/index.html",
+    "main.1e2e215a.css.map": "/wasm_sec_toolkit/static/css/main.1e2e215a.css.map",
+    "main.1da912db.js.map": "/wasm_sec_toolkit/static/js/main.1da912db.js.map",
+    "787.58fef95e.chunk.js.map": "/wasm_sec_toolkit/static/js/787.58fef95e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e2e215a.css",
+    "static/js/main.1da912db.js"
+  ]
+}
