@@ -72,7 +72,9 @@ const ImageStegnography = () => {
                 For best results make sure images are of same height and width<br/>
                 <span className="italic text-slate-400">Usage: Upload both carrierImage and inputImage if you want to hide the image inside another and click on "Embed Image" button. 
                 Upload just the carrierImage if you want to extract the hidden image from already encoded image by clicking on "Extract Image" 
-                button.</span>
+                button.<br/>
+                Once Encoded Image is generated save it by right clicking and doing "Save image as"
+                </span>
 
             </p>
             <div>
