@@ -6,7 +6,7 @@ import Calendar from "../assets/tools/Calendar.png";
 import Photos from "../assets/tools/Photos.png";
 import Uber from "../assets/tools/Uber.png";
 import { useState } from 'react';
-import ImageStegnography from './ImageStegnography';
+import ImageStegnography from './Stegnography';
 
 export default function DockMenu() {
     const [visibleItem, setVisibleItem] = useState("");
