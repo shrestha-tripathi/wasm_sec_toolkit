@@ -3,11 +3,12 @@ import { Sidebar } from 'primereact/sidebar';
 import { Tooltip } from 'primereact/tooltip';
 import Camera from "../assets/tools/Camera.png";
 import Messages from "../assets/tools/Messages.png";
-import Photos from "../assets/tools/Photos.png";
+import MortyChip from "../assets/tools/Morty-Manipulator-Chip.png";
 import Uber from "../assets/tools/Uber.png";
 import { useState } from 'react';
 import ImageStegnography from './Stegnography';
 import Base64Util from './Base64Util';
+import Md5Sum from './Md5Sum';
 
 export default function DockMenu() {
     const [visibleItem, setVisibleItem] = useState("");
@@ -27,10 +28,10 @@ export default function DockMenu() {
             }
         },
         {
-            label: 'Photos',
-            icon: () => <img alt="Photos" src={Photos} width="100%" />,
+            label: 'Md5Sum Calculator',
+            icon: () => <img alt="Md5Sum Calculator" src={MortyChip} width="100%" />,
             command: () => {
-                setVisibleItem("Photos");
+                setVisibleItem("Md5Sum Calculator");
             }
         },
         {
@@ -53,8 +54,8 @@ export default function DockMenu() {
                     <Base64Util />
                 </Sidebar>
 
-                <Sidebar visible={visibleItem === "Photos"} fullScreen position="left" onHide={() => setVisibleItem("")}>
-                    <ImageStegnography />
+                <Sidebar visible={visibleItem === "Md5Sum Calculator"} fullScreen position="left" onHide={() => setVisibleItem("")}>
+                    <Md5Sum />
                 </Sidebar>
 
                 <Sidebar visible={visibleItem === "Trash"} fullScreen position="left" onHide={() => setVisibleItem("")}>
