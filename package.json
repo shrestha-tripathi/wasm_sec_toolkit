@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "b64-util": "file:b64-util/pkg",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primereact": "^9.6.1",
@@ -23,6 +24,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "build:stegnography": "cd stegnography && wasm-pack build --target web --out-dir pkg",
+    "build:portscanner": "cd port-scanner && wasm-pack build --target web --out-dir pkg",
+    "build:b64util": "cd b64-util && wasm-pack build --target web --out-dir pkg",
     "build:wasm": "cd wasm-lib && wasm-pack build --target web --out-dir pkg",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

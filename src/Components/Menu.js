@@ -2,11 +2,12 @@ import { Dock } from 'primereact/dock';
 import { Sidebar } from 'primereact/sidebar';
 import { Tooltip } from 'primereact/tooltip';
 import Camera from "../assets/tools/Camera.png";
-import Calendar from "../assets/tools/Calendar.png";
+import Messages from "../assets/tools/Messages.png";
 import Photos from "../assets/tools/Photos.png";
 import Uber from "../assets/tools/Uber.png";
 import { useState } from 'react';
 import ImageStegnography from './Stegnography';
+import Base64Util from './Base64Util';
 
 export default function DockMenu() {
     const [visibleItem, setVisibleItem] = useState("");
@@ -19,10 +20,10 @@ export default function DockMenu() {
             }
         },
         {
-            label: 'App Store',
-            icon: () => <img alt="App Store" src={Calendar} width="100%" />,
+            label: 'Base64 Utility',
+            icon: () => <img alt="Base64 Utility" src={Messages} width="100%" />,
             command: () => {
-                setVisibleItem("App Store");
+                setVisibleItem("Base64 Utility");
             }
         },
         {
@@ -48,8 +49,8 @@ export default function DockMenu() {
                     <ImageStegnography />
                 </Sidebar>
 
-                <Sidebar visible={visibleItem === "App Store"} fullScreen position="left" onHide={() => setVisibleItem("")}>
-                    <ImageStegnography />
+                <Sidebar visible={visibleItem === "Base64 Utility"} fullScreen position="left" onHide={() => setVisibleItem("")}>
+                    <Base64Util />
                 </Sidebar>
 
                 <Sidebar visible={visibleItem === "Photos"} fullScreen position="left" onHide={() => setVisibleItem("")}>
