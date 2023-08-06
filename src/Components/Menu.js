@@ -4,11 +4,12 @@ import { Tooltip } from 'primereact/tooltip';
 import Camera from "../assets/tools/Camera.png";
 import Messages from "../assets/tools/Messages.png";
 import MortyChip from "../assets/tools/Morty-Manipulator-Chip.png";
-import Uber from "../assets/tools/Uber.png";
+import Instagram from "../assets/tools/Instagram.png";
 import { useState } from 'react';
 import ImageStegnography from './Stegnography';
 import Base64Util from './Base64Util';
 import Md5Sum from './Md5Sum';
+import UrlUtil from "./UrlUtil";
 
 export default function DockMenu() {
     const [visibleItem, setVisibleItem] = useState("");
@@ -35,10 +36,10 @@ export default function DockMenu() {
             }
         },
         {
-            label: 'Trash',
-            icon: () => <img alt="trash" src={Uber} width="100%" />,
+            label: 'Url Encode/Decode',
+            icon: () => <img alt="Url Encode/Decode" src={Instagram} width="100%" />,
             command: () => {
-                setVisibleItem("Trash");
+                setVisibleItem("Url Encode/Decode");
             }
         }
     ];
@@ -58,8 +59,8 @@ export default function DockMenu() {
                     <Md5Sum />
                 </Sidebar>
 
-                <Sidebar visible={visibleItem === "Trash"} fullScreen position="left" onHide={() => setVisibleItem("")}>
-                    <ImageStegnography />
+                <Sidebar visible={visibleItem === "Url Encode/Decode"} fullScreen position="left" onHide={() => setVisibleItem("")}>
+                    <UrlUtil />
                 </Sidebar>
                 <Dock model={items} position={"bottom"} />
             </div>
