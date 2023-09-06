@@ -17,7 +17,6 @@
     "react-scripts": "5.0.1",
     "stegnography": "file:stegnography/pkg",
     "urlutil": "file:urlutil/pkg",
-    "wasm-lib": "file:wasm-lib/pkg",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -29,7 +28,7 @@
     "build:portscanner": "cd port-scanner && wasm-pack build --target web --out-dir pkg",
     "build:b64util": "cd b64-util && wasm-pack build --target web --out-dir pkg",
     "build:urlutil": "cd urlutil && wasm-pack build --target web --out-dir pkg",
-    "build:wasm": "cd wasm-lib && wasm-pack build --target web --out-dir pkg",
+    "build-wasm": "npm run build:stegnography && npm run build:portscanner && npm run b64util && npm run urlutil",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,0 +1,14 @@
+{
+  "name": "urlutil",
+  "version": "0.1.0",
+  "files": [
+    "urlutil_bg.wasm",
+    "urlutil.js",
+    "urlutil.d.ts"
+  ],
+  "module": "urlutil.js",
+  "types": "urlutil.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

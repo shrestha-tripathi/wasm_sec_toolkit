@@ -1,0 +1,14 @@
+{
+  "name": "b64-util",
+  "version": "0.1.0",
+  "files": [
+    "b64_util_bg.wasm",
+    "b64_util.js",
+    "b64_util.d.ts"
+  ],
+  "module": "b64_util.js",
+  "types": "b64_util.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

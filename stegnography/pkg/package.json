@@ -1,0 +1,14 @@
+{
+  "name": "stegnography",
+  "version": "0.1.0",
+  "files": [
+    "stegnography_bg.wasm",
+    "stegnography.js",
+    "stegnography.d.ts"
+  ],
+  "module": "stegnography.js",
+  "types": "stegnography.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
